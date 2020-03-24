@@ -28,7 +28,7 @@
   text-transform: uppercase;
 }
 .txt::before {
-  content: "vedant-writes";
+  content: "writer.com";
   position: absolute;
   mix-blend-mode: difference;
   filter: blur(3px);
