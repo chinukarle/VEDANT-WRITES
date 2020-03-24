@@ -1,0 +1,426 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>POETRY</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Moleskine Notebook with jQuery Booklet" />
+    <meta
+      name="keywords"
+      content="jquery, book, flip, pages, moleskine, booklet, plugin, css3 "
+    />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" src="booklet/jquery-1.4.4.min.js"></script>
+    <script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script
+      src="booklet/jquery.fermion.booklet.1.1.0.js"
+      type="text/javascript"
+    ></script>
+
+    <link
+      href="booklet/jquery.booklet.1.1.0.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script src="cufon/cufon-yui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      Cufon.replace("h1,p,.b-counter");
+      Cufon.replace(".book_wrapper a", { hover: true });
+      Cufon.replace(".title", {
+        textShadow: "1px 1px #C59471",
+        fontFamily: "ChunkFive"
+      });
+      Cufon.replace(".footer a", {
+        textShadow: "1px 1px #C59471",
+        fontFamily: "ChunkFive"
+      });
+      Cufon.replace(".footer p", { fontFamily: "Note_this" });
+      Cufon.replace(".loading", {
+        textShadow: "1px 1px #000",
+        fontFamily: "ChunkFive"
+      });
+    </script>
+  </head>
+  <body>
+    <div class="text" id="dock_panel">
+      <span class="text">Poetry Booklet</span>
+      <span class="text" style="font-size: 11px;" id="direct_nav"></span>
+    </div>
+    <div class="book_wrapper">
+      <a id="next_page_button"></a>
+      <a id="prev_page_button"></a>
+      <div id="loading" class="loading">Loading pages...</div>
+      <div id="mybook" style="display:none;">
+        <div class="b-load">
+          <div>
+            <h1>तू कर तुझे जो चाहिये...</h1>
+            <p>
+              <br />
+              तू कर तुझे जो चाहिये <br />जब ये जमाना ना कहे, <br />जब तू अपनी
+              मंजिल पायेगा तब यही<br />
+              जमाना तेरे पीछेपीछे आयेगा.<br /><br />कई बार तुझपें सवाल उठेंगे<br />तब
+              तू उन्हे जवाब ना दे,<br />
+              जब तू अपनी मंजिल पायेगा<br />
+              तेरा हर लिखा उनका जवाब बन जायेगा<br />तब ये जमाना तेरे पीछेपीछे
+              आयेगा<br />
+              तू कर तुझे जो चाहिये....... <br /><br />ना मिटने दे तेरे अंदर की
+              "आग" तू <br />ये जमाना तुझसे जलता होगा <br />मगर जब बाहर थंड
+              होगी<br />
+              तो यही उसे "अलाव" बनाकर भीड करदेंगे.<br />
+              तू कर तुझे जो चाहिये,<br />
+              जब ये जमाना ना कहे<br />
+            </p>
+          </div>
+          <div>
+            <p>
+              तेरे रास्ते मे "वो" रूकावटे डालेंगे,<br />
+              उनको सीढीयां बना तू <br />उनपे चलकर अपनी मंजिल हासील कर तू.<br />
+              वो सीढीयां फीरभी वही रहेंगी,<br />
+              तुझे नीचे लानेकेलीये पुकारती रहेंगी,<br />तब तू उन्हे अनसूना करदे
+              <br />और बस अपने दिल की आवाज सून.<br />
+              तू कर तुझे जो चाहिये,<br />
+              जब ये जमाना ना कहे <br />जब तू अपनी मंजिल पायेगा<br />
+              तब यही जमाना तेरे पीछेपीछे आयेगा.......<br /><br />
+              कई बार तू डरके पीछे हटेगा <br />तब ये जमाना तुझे सही कहेगा,<br />
+              तब तू एक और कदम पीछेले,<br />
+              तब उनके मन मे कामयाबी का फुल खिलेगा,<br />
+              तुझे तेरी मंजिल पानेसे रोकलीया ऐसा उन्हे लगेगा.<br />
+              उसी वक्त तू मिले हुए फासले का इस्तेमाल कर,<br />
+              और शेर की तरह छलांग लगा,और अपनी मंजिल हासील कर.<br />
+              तु कर तुझे जो चाहिये,<br />
+            </p>
+          </div>
+          <div>
+            <p>
+              तू ऐसी मंजिल चुन जहाँ पहले कोई गया नही,<br />
+              ऐसी जमीन पे खडा हो <br />जहाँ कभी किसीने कोई बीज बोया नही.<br />जहाँ
+              कभी 'बारिश' ना हुई<br />
+              वहा तू अपने 'पसीनेसे' कामयाबी का पेड उगा,<br />
+              फीर नाजाने तेरी तरक्की के मीठे फल खाने<br />
+              लोग भीड करदेंगे.<br />
+              तू कर तुझे जो चाहिये,<br />जब ये जमाना ना कहे...<br /><br />
+              अपने अंदरकी जो आग हैं,<br />उससे जला तेरी मशाल तू<br />
+              ये जमाना जब अंधेरा करदेगा,<br />तब उससे देख अपना राह तू.<br />
+              जब उनके यहा अंधेरा होगा,<br />तब बस तेरी राह पर उजाला होगा,<br />
+              तब तेरेही राह पर चलेगा ये जमाना,<br />क्योंकी अब तुही उनका
+              "ध्रुवतारा" होगा.<br />
+              तू कर तुझे जो चाहिये,<br />जब ये जमाना ना कहे....
+            </p>
+            <p class="name">
+              <b>-वेदांत प्रसाद प्रिया कार्ले</b>
+            </p>
+          </div>
+          <div>
+            <h1>सोच...</h1>
+            <p>
+              सोच सोच मे इन्सान खुदही उलज जाता हैं,<br />
+              खुदको फिर अंदरसे मरा हुआ पाता हैं.<br /><br />
+              दिमाग मे हमेशा उधम मचा रेहेता हैं,<br />
+              हमारी कमियोका फिर अंदर सागर सा बेहता हैं.<br /><br />
+              इस सागरमे खुबीया तैर नही पाती,<br />
+              कहीपर डाली पकडके अटक हैं जाती.<br />
+              खुबीयोंको हात तुझेही देना हैं,<br />
+              उन्हे तैरना तुझेही सिखाना हैं.<br /><br />
+              कमीयोंको तैरना तो आता हैं,<br />
+              पर किनारेका उन्हे कुछ नही पता हैं.<br />
+              किनारेपर तो तू खडा हैं,<br />
+              किसे हात देना हैं ये तेरी उलजन हैं.<br /><br />
+              तेरी कमीयोंका सागर हैं तुझसेभी बडा.<br />
+              लेकिन याद रख, ये सागर कितनाभी बडा हो<br />
+              तेरे हौसलेसे बडा नही हो सकता,<br />
+            </p>
+          </div>
+
+          <div>
+            <img src="ui/3.jpg" alt="" style="display: none;" />
+            <p>
+              ये कितनाभी तैर ले,<br />
+              खुद के दमपे खडा नही हो सकता.<br /><br />
+              तो हरवक्त सोच मे ना रहाकर<br />
+              वरना खुबीया कही गुम होजाएगी बेहकर.<br />
+              तो कर निश्चय और बढा हात,<br />खुबीयोको दे तेरा साथ,<br />
+              जिंदगीके किनारेकी फीर कुछ औरही होगी बात....
+            </p>
+            <p class="name">
+              <b>-वेदांत प्रसाद प्रिया कार्ले</b>
+            </p>
+          </div>
+          <div>
+            <h1>कुठे शोधू तुला l.....</h1>
+            <p>
+              नाही मी मंदिरात, नाही मी दगडात,<br />
+              कुठल्या फोटोतही नाही मी रहात.<br />
+              पानाफुलांत मी आहे,पक्ष्यांच्या किलबिलाटात मी आहे<br />
+              गरीबाच्या आशिर्वादात मी आहे,<br />श्रीमंतांच्या साधेपणात मी आहे.
+              शोधायचच झालं मला तर??<br />
+              तुला उशीर झालाय म्हणून हिरव्या सिग्नल मधे मी आहे,<br />
+              संकटात मदत करणाऱ्या तुझ्या मित्रांमधे मी आहे,<br />
+              4 रिक्षावाल्यांनी नाकारल्यावर हो म्हणणाऱ्या पाचव्या मधेही मी आहे,
+              सामान्यांच्या माणूसकीत मी आहे,<br />
+              दुष्काळातल्या पावसात मी आहे,<br />
+              तुला जन्म दिलेल्या आईत मी आहे,<br />
+              तुला खांद्यावर घेतलेल्या तुझ्या बापात मी आहे,<br />
+              लाईट गेल्यावर तो मेणबत्तीचा प्रकाश मी आहे,<br />
+              तुझ्या डोक्यावरचं अखंड आकाश मी आहे,<br />
+              उगाच कशाला भटकत असतोस कुठेतरी माझ्या शोधात,<br />
+              मानवा, तुझ्या मनात मी आहे.........
+            </p>
+            <p class="name">
+              <b>-वेदांत प्रसाद प्रिया कार्ले</b>
+            </p>
+          </div>
+          <div>
+            <h1>दोस्त</h1>
+            <p>
+              जहाँ कभी बातोंकि मेहफिल हूआकरतिथि वहाँ आज खामोशीसि छाई हैं,<br />
+              दोस्त मेरे आज बहोत दिनोंके बाद बिछडनेकि बारी आइ हैं.<br />
+              याद आएगे वोदिन जब मिलके टिफन खातेथे<br />
+              अप्ने खाने को छोडकर आपकाहि खत्मं करतेथे,<br />
+              आज आपकी पसंद का सब हैं थालि मैं<br />
+              पर आजूबाजू सब खाली हैं,<br />
+              दोस्त मेरे आज बहोत दिनोंके बाद बिछडनेकि बारि आइ हैं......<br /><br />
+
+              बात हैं उन दिनोंकि जब एकदुसरेको चिढातेथे<br />
+              हर लडकीको तेरेलिये अप्नि भाभी बनालेतेथे<br />
+              आजभि कोई लडकी दिखे तो तेरी याद आती हैं<br />
+              भाभी बनानेके चक्करमे खूब मार पडती हैं<br />
+              कईबार मार खाके तुझसे दोस्ती निभाई हैं<br />
+              दोस्त मेरे आज बहोत दिनोंके बात बिछडनेकि बारी आइ हैं......<br />
+            </p>
+          </div>
+          <div>
+            <p>
+              आजभी उन गलियों मैं,तेरी आवाज गुंजती हैं<br />
+              चलते-चलते हररोज,मुझे वो पुकारती हैं.<br />
+              मुडके देखू तो बस यादे नजर आती हैं,<br />
+              मूह पर मेरे एक मुस्कानसि आजाती हैं.<br />
+              चलते-चलते फिर कंधा भारीसा लगने लगता हैं<br />
+              तेरी हातो का वजन अब सुकून ले आता हैं.<br />
+              खुशी इस बातकि,कि सिर्फ याद तेरी मुझे जिंदगि मैं आगे ले आइ हैं,<br />
+              दोस्त मेरे,आज बहोत दिनोंके बाद,बिछडनेकि बारी आई हैं......<br /><br />
+
+              काश उस वक्तं दो period और बंक मारते,<br />
+              Canteen मे दो वडापाव ज्यादा खालेते.<br />
+              क्योंकि आज वो पल वापस नही आयेंगे,<br />
+              दिलमे दो कमरे खाली रहं जायेंगे..<br />
+              चल आज फिरसे उन बातोंको ताजा करते हैं<br />
+              खाली कमरोंको फिरसे भर आते हैं..<br />
+              बस आज ना मत केहेना,क्योंकि कल शायद ये आँसू फिर ना आए,<br />
+            </p>
+          </div>
+          <div>
+            <p>
+              ये नमकीन बरसात यादोंकी कही गुम ना हो जाए...<br />
+              इसलिये केहेताहूंकि आज वो दो वडापाव खानेकि बारी आइ है,<br />
+              दोस्त मेरे आज बहोत दिनोंके बाद बिछडनेकि बारि आइ हैं......<br />
+            </p>
+            <p class="name">
+              <b>-वेदांत प्रसाद प्रिया कार्ले</b>
+            </p>
+          </div>
+          <div>
+            <h1>मि हि एका मुलिवर जिवापाड प्रेम केलं...</h1>
+            <p><b>(AWARD WINNING POEM)</b></p>
+            <p>
+              माझं पण अर्ध आयुष्य स्वप्न बघण्यातच निघून गेलं<br />
+              कारण मिहि एका मुलीवर जिवापाड प्रेम केलं.<br /><br />
+
+              जन्माला आल्यावर माहित नव्हत कि प्रेम काय असतं<br />
+              कळत नव्हतं कि ते मनात असतं का रुपात असतं.<br />
+              माझ्या कपाटाच्या आरश्याने मला याचं उत्तर दिलं<br />
+              माझं एकटेपणाचं कोडं कसं सहज उलगडलं<br />
+              मिहि एका मुलिवर जिवापाड प्रेम केलं.<br /><br />
+
+              जेव्हा कळलं कि हे प्रेमच आहे तेव्हा वेळ निघून गेलि<br />
+              तिला कोणीतरी दुसऱ्यानेच पटवून नेलि होति.<br />
+              प्रेम भंग होऊन वाईट वाटण्यात आयुष्य निघून गेलं<br />
+              कारण मिहि एका मुलिवर जिवापाड प्रेम केलं.<br /><br />
+
+              कळलं नाही का पण पाहताक्षणि तिच्या प्रेमात पडलो,<br />
+              तिला सांगण्याच्या प्रयत्नात खूप धडपडलो.<br />
+              तिला मिळवण्याच्या नादात आयुष्य सिंगलच नेलं<br />
+              कारण मिहि एका मुलीवर जिवापाड प्रेम केलं
+            </p>
+          </div>
+          <div>
+            <p>
+              वेळ होती दहाविचि काळ होता अभ्यासाचा<br />
+              मि मोठा ROMEO विचार करत होतो प्रेमाचा!<br />
+              तिलाच बघत बसायचो तिचाच विचार करायचो,<br />
+              ऋदयाच्या कॅमेच्यात तिचेच फोटो काढायचो.<br />
+              फोटो डेव्हलप नाहि झाले पण त्यांना मि सेव केलं<br />
+              कारण मि हि एका मुलीवर जिवापाड प्रेम केलं.<br /><br />
+
+              दहावी झालि distinction मिळवून पासझालो<br />
+              मात्र प्रेमच्या परिक्षेत अजुनहि फेल राहिलो<br />
+              तेव्हाही मि सिंगल होतो आताहि मि सिंगल आहे<br />
+              तिने मात्र तिच्या प्रेमाला चुज केलं<br />
+              मि हि एका मुलीवर जिवापाड प्रेम केलं.<br /><br />
+
+              अता आलि बारावि आयुष्य ठरवणारा हा महत्वाचा काळ अजूनही तिचाच
+              विचार<br />
+              करत राहिला हा श्रावणबाळ परिक्षा आलि होति jee चि निवडायचा होता
+              चार<br />
+              पैकि एक ओप्शन. मि मात्र प्रेमाचा पाचवा ओप्शन शोधण्यात वर्ष
+              घालवलं<br />
+              कारण मिहि एका मुलिवर जिवापाड प्रेम केलं
+            </p>
+          </div>
+          <div>
+            <p>
+              तिचं ते हसणं मला अजुनहि आठवतं<br />
+              तिचं जवळ नसणं डोळ्यात पाणी साठवतं<br />
+              ती बोलायला आल्यावर शब्द नसायचे<br />
+              तिच्या मुळेच तर मला स्वर्ग दिसायचे.<br />
+              स्वर्गात नाहि पण तिच्या मुळे आयुष्य वर्गात तरि गेलं<br />
+              मि हि एका मुलीवर जिवापाड प्रेम केलं.<br /><br />
+
+              लोकं म्हणतात प्रेमात पडल्यावर रात्री झोप लागत नाहि,<br />
+              प्रेमाशिवाय आपल्याला काहिच सुचत नाहि.<br />
+              पण आई म्हणते आज काल मि जरा जास्तच झोपू<br />
+              अता आईला कोण सांगणार<br />
+              तिचं माझ्या स्वप्नात येणे अजूनही नाहि गेलं<br />
+              कारण मिहि एका मुलिवर जिवापाड प्रेम केलं<br /><br />
+
+              प्रेमाचा हा प्रवास असाच चालू राहिलि<br />
+              पण अजूनही स्वर्ग मि नाहि पाहिला.<br />
+              एक दिवस ति माझ्या जवळ आणि मला म्हणालि<br />
+              माझ्याशी मैत्री करशिल का?<br />
+              माझ्या मैत्रीसाठी प्रेमापुढे हरशिल का?<br />
+            </p>
+          </div>
+          <div>
+            <p>
+              कोण म्हणतं तिने माझ्यावर प्रेम नहि केलं<br />
+              तिनेहि माझ्यावर प्रेम केलं फक्तं ते मैत्रितनं व्य्क्तं झालं<br />
+              मि हि एका मुलिवर..........
+            </p>
+            <p class="name">
+              <b>-वेदांत प्रसाद प्रिया कार्ले</b>
+            </p>
+          </div>
+          <div>
+            <h1>आरक्षण</h1>
+            <p>
+              देवाने बनविला होता तो फक्तं माणूस<br />
+              जात धर्म रंग यांची आपणच लावली फूस..<br /><br />
+              प्रत्येकाच्या अंगी वाहते रक्त वेगळे<br />पण ते लालच हे कोणालाच ना
+              कळे??<br /><br />
+              जात आपुली कुठलीही असली तरी एकत्रच बसून पीता<br />
+              मग कशाला हवं आरक्षण,कशाला हव्या सिटा..<br /><br />
+              देश आपुला एकच जात माणूसकिचि<br />
+              कुठून आले भेदभाव हाव आरक्षणाची...<br /><br />
+              माणसातले माणूसपण आरक्षणाने रद्द केले<br />
+              कारण माणुसकीसाठी आरक्षण कोणीच नाही मागितले..<br /><br />
+              आरक्षण द्यावे हुशारिला ना कुठल्याही जातीला<br />
+              मग नाही कोण जाणार परदेशाच्या वारिला..<br /><br />
+              कित्तेक वीर देश स्वतंत्र करण्यासाठी लढून गेले<br />
+              आरक्षणाच्या तंत्राने देश पुन्हा पारतंत्र्यात नेले..
+            </p>
+          </div>
+          <div>
+            <p>
+              आज आपले 'अच्छे दिन' नाहि तर देशातले 'दीन'अच्छे झालेपाहिजेत,<br />आरक्षणाच्या
+              सिटा खरतर त्याना दिल्या पाहिजेत...<br />
+              नको हे आरक्षण नको ह्या सिटा,<br />
+              एकत्र येउन घडवू देश लावुनि माणुसकीच्या विटा....
+            </p>
+            <p class="name">
+              <b>-वेदांत प्रसाद प्रिया कार्ले</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The JavaScript -->
+
+    <script type="text/javascript">
+      $(function() {
+        var $mybook = $("#mybook");
+        var $bttn_next = $("#next_page_button");
+        var $bttn_prev = $("#prev_page_button");
+        var $loading = $("#loading");
+        var $mybook_images = $mybook.find("img");
+        var cnt_images = $mybook_images.length;
+        var loaded = 0;
+        //preload all the images in the book,
+        //and then call the booklet plugin
+
+        $mybook_images.each(function() {
+          var $img = $(this);
+          var source = $img.attr("src");
+          $("<img/>")
+            .load(function() {
+              ++loaded;
+              if (loaded == cnt_images) {
+                $loading.hide();
+                $bttn_next.show();
+                $bttn_prev.show();
+                $mybook.show().booklet({
+                  name: null, // name of the booklet to display in the document title bar
+                  width: 800, // container width
+                  height: 500, // container height
+                  speed: 600, // speed of the transition between pages
+                  direction: "LTR", // direction of the overall content organization, default LTR, left to right, can be RTL for languages which read right to left
+                  startingPage: 0, // index of the first page to be displayed
+                  easing: "easeInOutQuad", // easing method for complete transition
+                  easeIn: "easeInQuad", // easing method for first half of transition
+                  easeOut: "easeOutQuad", // easing method for second half of transition
+
+                  closed: true, // start with the book "closed", will add empty pages to beginning and end of book
+                  closedFrontTitle: null, // used with "closed", "menu" and "pageSelector", determines title of blank starting page
+                  closedFrontChapter: null, // used with "closed", "menu" and "chapterSelector", determines chapter name of blank starting page
+                  closedBackTitle: null, // used with "closed", "menu" and "pageSelector", determines chapter name of blank ending page
+                  closedBackChapter: null, // used with "closed", "menu" and "chapterSelector", determines chapter name of blank ending page
+                  covers: false, // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
+
+                  pagePadding: 10, // padding for each page wrapper
+                  pageNumbers: true, // display page numbers on each page
+
+                  hovers: false, // enables preview pageturn hover animation, shows a small preview of previous or next page on hover
+                  overlays: false, // enables navigation using a page sized overlay, when enabled links inside the content will not be clickable
+                  tabs: false, // adds tabs along the top of the pages
+                  tabWidth: 60, // set the width of the tabs
+                  tabHeight: 20, // set the height of the tabs
+                  arrows: false, // adds arrows overlayed over the book edges
+                  cursor: "pointer", // cursor css setting for side bar areas
+
+                  hash: false, // enables navigation using a hash string, ex: #/page/1 for page 1, will affect all booklets with 'hash' enabled
+                  keyboard: true, // enables navigation with arrow keys (left: previous, right: next)
+                  next: $bttn_next, // selector for element to use as click trigger for next page
+                  prev: $bttn_prev, // selector for element to use as click trigger for previous page
+
+                  menu: null, // selector for element to use as the menu area, required for 'pageSelector'
+                  pageSelector: false, // enables navigation with a dropdown menu of pages, requires 'menu'
+                  chapterSelector: false, // enables navigation with a dropdown menu of chapters, determined by the "rel" attribute, requires 'menu'
+
+                  shadows: true, // display shadows on page animations
+                  shadowTopFwdWidth: 166, // shadow width for top forward anim
+                  shadowTopBackWidth: 166, // shadow width for top back anim
+                  shadowBtmWidth: 50, // shadow width for bottom shadow
+
+                  before: function() {}, // callback invoked before each page turn animation
+                  after: function() {} // callback invoked after each page turn animation
+                });
+                Cufon.refresh();
+              }
+            })
+            .attr("src", source);
+        });
+      });
+    </script>
+  </body>
+</html>
